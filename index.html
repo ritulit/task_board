@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Task Board</title>	
+    <meta  charset= "UTF-8"/>
+	<link rel="shortcut icon" type="image/jpg" href="img/notebg.png"  />
+	<link rel="stylesheet" href="css/page.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"  />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    
+
+</head>
+<body>
+
+<header>
+
+<div><img src="img/title.png"/></div>
+
+
+</header>
+  
+
+  <div class="form">
+      <div class="header_note_container">
+	   <form>
+         <img id="form" src="img/formbg.jpg"/>
+         <img id="form" src="img/formbg.jpg"/>
+         <img id="form" src="img/formbg.jpg"/>
+         <textarea id="form_desc"  placeholder="Insert task description:" rows="4"
+	      cols="80" autocomplete="off"  ></textarea>
+         <input  type="text" id="form_time"  placeholder="Insert due date: (dd/mm/yyyy)"  autocomplete="off"/>
+		 <input type="button" class="glyphicon" id="save_note" title="save note" value="&#xe146;">  <!--&#xe146;</button>-->
+		 <div class="error_message" id="form_err"></div>
+        </form>
+      </div> <!--closing header note container-->
+  </div><!-- closing form div-->
+ 
+   <div class="notes_container" id="notes_container"></div> <!--inside it we will insert all our tasks stored in storage  -->
+
+
+    <script  src="js/taskBoard.js"></script>
+	 
+	
+
+	
+	
+	
+</body>
+</html>
